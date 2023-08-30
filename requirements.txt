@@ -1,0 +1,11 @@
+pandas
+easydict
+scipy
+cython
+dill
+h5py
+cv2
+tqdm
+yaml
+ftfy
+regex
