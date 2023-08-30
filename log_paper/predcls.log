@@ -1,0 +1,65 @@
+mode : predcls
+data_path : /media/qncsn2020/data/action_genome/
+datasize : large
+ckpt : None
+optimizer : adamw
+lr : 1e-05
+nepoch : 15
+enc_layer : 1
+dec_layer : 3
+bce_loss : False
+focal_loss : True
+-------loading annotations---------slowly-----------
+--------------------finish!-------------------------
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+loading word vectors from data/glove.6B.200d.pt
+loading word vectors from data/glove.6B.200d.pt
+__background__ -> __background__ 
+fail on __background__
+**************************************************
+CKPT /media/qncsn2020/data/action_genome/mymodel/33/model_7_0.738.tar is loaded
+/home/qncsn2020/anaconda3/envs/to110/lib/python3.7/site-packages/torch/nn/functional.py:5022: UserWarning: Byte tensor for key_padding_mask in nn.MultiheadAttention is deprecated. Use bool tensor instead.
+  warnings.warn("Byte tensor for key_padding_mask in nn.MultiheadAttention is deprecated. Use bool tensor instead.")
+0/1750
+100/1750
+200/1750
+300/1750
+400/1750
+500/1750
+/home/qncsn2020/anaconda3/envs/to110/lib/python3.7/site-packages/torch/nn/functional.py:5022: UserWarning: Byte tensor for key_padding_mask in nn.MultiheadAttention is deprecated. Use bool tensor instead.
+  warnings.warn("Byte tensor for key_padding_mask in nn.MultiheadAttention is deprecated. Use bool tensor instead.")
+600/1750
+/home/qncsn2020/anaconda3/envs/to110/lib/python3.7/site-packages/torch/nn/functional.py:5022: UserWarning: Byte tensor for key_padding_mask in nn.MultiheadAttention is deprecated. Use bool tensor instead.
+  warnings.warn("Byte tensor for key_padding_mask in nn.MultiheadAttention is deprecated. Use bool tensor instead.")
+700/1750
+/home/qncsn2020/anaconda3/envs/to110/lib/python3.7/site-packages/torch/nn/functional.py:5022: UserWarning: Byte tensor for key_padding_mask in nn.MultiheadAttention is deprecated. Use bool tensor instead.
+  warnings.warn("Byte tensor for key_padding_mask in nn.MultiheadAttention is deprecated. Use bool tensor instead.")
+800/1750
+900/1750
+1000/1750
+1100/1750
+1200/1750
+1300/1750
+1400/1750
+1500/1750
+1600/1750
+1700/1750
+-------------------------with constraint-------------------------------
+======================predcls============================
+R@10: 0.7090  R@20: 0.7376  R@50: 0.7378  
+
+-------------------------semi constraint-------------------------------
+======================predcls============================
+R@10: 0.4680  R@20: 0.4719  R@50: 0.4719  
+
+-------------------------no constraint-------------------------------
+======================predcls============================
+R@10: 0.8313  R@20: 0.9663  R@50: 0.9990  
+
+-------------------------trace k=6-------------------------------
+======================predcls============================
+R@10: 0.8208  R@20: 0.9356  R@50: 0.9497  
+
+-------------------------trace k=7-------------------------------
+======================predcls============================
+R@10: 0.8260  R@20: 0.9524  R@50: 0.9720 

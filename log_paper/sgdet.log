@@ -1,0 +1,62 @@
+nohup: ignoring input
+mode : sgdet
+data_path : /data/wangjingyi/action_genome/
+ckpt : None
+optimizer : adamw
+lr : 1e-05
+nepoch : 15
+gpu_id : 6
+datasize : large
+enc_layer : 1
+dec_layer : 3
+bce_loss : False
+focal_loss : True
+object_loss : 10
+-------loading annotations---------slowly-----------
+--------------------finish!-------------------------
+loading word vectors from data/glove.6B.200d.pt
+loading word vectors from data/glove.6B.200d.pt
+__background__ -> __background__ 
+fail on __background__
+**************************************************
+/home/wangjingyi/anaconda3/envs/to110/lib/python3.7/site-packages/torch/nn/functional.py:5022: UserWarning: Byte tensor for key_padding_mask in nn.MultiheadAttention is deprecated. Use bool tensor instead.
+  warnings.warn("Byte tensor for key_padding_mask in nn.MultiheadAttention is deprecated. Use bool tensor instead.")
+0/1737
+100/1737
+200/1737
+300/1737
+400/1737
+500/1737
+600/1737
+700/1737
+800/1737
+900/1737
+1000/1737
+1100/1737
+1200/1737
+1300/1737
+1400/1737
+1500/1737
+1600/1737
+1700/1737
+-------------------------with constraint-------------------------------
+======================sgdet============================
+R@10: 0.2684  R@20: 0.3554  R@50: 0.3829  
+
+-------------------------semi constraint-------------------------------
+======================sgdet============================
+R@10: 0.2250  R@20: 0.2570  R@50: 0.2602  
+
+-------------------------no constraint-------------------------------
+======================sgdet============================
+R@10: 0.2777  R@20: 0.3915  R@50: 0.5003  
+
+-------------------------trace k=6-------------------------------
+======================sgdet============================
+R@10: 0.2777  R@20: 0.3906  R@50: 0.4873  
+
+-------------------------trace k=7-------------------------------
+======================sgdet============================
+R@10: 0.2777  R@20: 0.3912  R@50: 0.4946  
+
+
