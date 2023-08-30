@@ -6,7 +6,7 @@ This repository contains the code implementation for the paper "Cross-Modality T
 
 ## Introduction
 
-Dynamic scene graphs generated from video clips could help enhance the semantic visual understanding in a wide range of challenging tasks. In the process of temporal and spatial modeling during dynamic scene graph generation, it is particularly intractable to learn time-variant relations in dynamic scene graphs among frames. In this paper, we propose a Time-variant Relation-aware TRansformer (TR<sup>2</sup>), which aims to model the temporal change of relations in dynamic scene graphs. Extensive experiments on the Action Genome dataset prove that our TR<sup>2</sup>can effectively model the time-variant relations. TR<sup>2</sup> significantly outperforms previous state-of-the-art methods under two different settings by 2.1% and 2.6% respectively.
+Dynamic scene graphs generated from video clips could help enhance the semantic visual understanding in a wide range of challenging tasks. In the process of temporal and spatial modeling during dynamic scene graph generation, it is particularly intractable to learn time-variant relations in dynamic scene graphs among frames. In this paper, we propose a Time-variant Relation-aware TRansformer (TR<sup>2</sup>), which aims to model the temporal change of relations in dynamic scene graphs.
 
 ![](overall_v3.png)
 
